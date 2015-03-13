@@ -57,14 +57,11 @@ img {
 }
 .img_wrapper{
     position: relative;
-    padding-top: 75%;
-    margin-bottom: 40px;
-    background: #fafafa;
     overflow: hidden;
 }
 
 .img_wrapper img{
-    position: absolute;
+
     width: 100%;
     top: 0;
     left: 0;
