@@ -1,0 +1,215 @@
+/*
+Styles.css
+Wade Phillips
+2.22.14
+
+1. Import
+2. General
+3. Header
+4. Main Content
+5. Footer
+*/
+
+/*Import*/
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Audiowide);
+
+/*General*/
+body {
+  font-family: 'Source Code Pro', arial ,serif;
+  background-image: url('../img/stardust2.png');
+  margin: 0px 0px;
+
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Audiowide', cursive;
+	color: #00FF20;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+	margin: 0px;
+	padding-top: 0px;
+}
+/*header*/
+header {
+	background-color: #000;
+	position: fixed;
+	width:100%;
+	z-index: 200;
+
+}
+header h1 {
+	color: #fff;
+	margin: 1em;
+	overflow-wrap: break-word; 
+}
+header h6 {
+	margin: 1em 3em;
+	overflow-wrap: break-word; 
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.center {
+	text-align: center;
+}
+#logo {
+	margin: 1em 1em 1em 0;
+	float: right;
+	width:150px;
+}
+
+nav{
+	padding: 1em;
+
+}
+nav a {
+	text-decoration: none;
+	color:#000;
+}
+nav ul {
+	text-align: center;
+	margin: 0;
+}
+nav ul li {
+	display: inline;
+	background-color: #00FF20;
+	padding: .5em;
+	border: #000 solid 3px;
+	border-radius: 5px;
+}
+nav ul li.active, nav ul li:hover {
+	background-color: #000;
+	border: #00FF20 solid 3px;
+	color: #00FF20;
+}
+nav ul li:hover{
+	position: relative;
+	top: -5px;
+}
+nav ul li.active:hover {
+	position: static;
+}
+
+/*Main Content*/
+#content {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1em;
+	position: relative;
+	top: 175px;
+	color: #fff;
+}
+#content img {
+	width: 100%;
+	margin-top:1em;
+}
+section, aside {
+	padding: .5em .5em .5em .5em ;
+	background-color: rgba(60, 60, 60, 0.5);
+	border-radius: 5px;
+}
+section {
+	width: 65%;
+	float: left;
+	position: relative;
+}
+aside {
+	width: 30%;
+	float:right;
+}
+img#star {
+	position: absolute;
+	top:10px;
+	right: 5px;
+	height:25px;
+	width:25px;
+	-webkit-animation: scale 6s infinite linear;
+	-moz-animation: scale 6s infinite linear;
+	-o-animation: scale 6s infinite linear;
+	-ms-animation: scale 6s infinite linear;	
+	animation: scale 6s infinite linear;
+}
+img#star.right {
+	right:0;
+	left: 5px;
+}
+
+@media screen and (max-width : 882px) {
+
+	header {
+		position: static;
+		text-align: center;
+	}
+	header h1, header h6 {
+		padding: 0;
+
+	}
+	nav	{
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+	nac ul {
+		text-align: center;
+	}
+	nav ul li{
+		display: block;
+		margin-bottom: 5px;
+		width:50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav ul li:hover{
+
+		top:0px;
+	}
+	#content{
+		top:0;
+	}
+	section, aside {
+		width:100%;
+		margin: 1em auto;
+		float: none;
+	}
+	#logo {
+		margin-left:auto;
+		margin-right: auto;
+		float:none;
+	}
+}
+@-webkit-keyframes scale {
+0% { -webkit-transform: scale(1,1);}
+20% { -webkit-transform:  scale(1.2,1.2);}
+40% { -webkit-transform:  scale(1,1);
+100% { -webkit-transform:  scale(1,1);}
+}
+@-moz-keyframes scale {
+0% { -moz-transform: scale(1,1);}
+50% { -moz-transform:  scale(1.2,1.2);}
+40% { -moz-transform:  scale(1,1);
+100% { -moz-transform: scale(1,1);}
+}
+@-o-keyframes scale {
+0% { -o-transform: scale(1,1);}
+50% { -o-transform:  scale(1.2,1.2);}
+40% { -o-transform:  scale(1,1);
+100% { -o-transform: scale(1,1);}
+}
+@-ms-keyframes scale {
+0% { -ms-transform: scale(1,1);}
+50% { -ms-transform:  scale(1.2,1.2);}
+40% { -ms-transform:  scale(1,1);
+100% { -ms-transform: scale(1,1);}
+}
+@keyframes scale {
+0% { transform: scale(1,1);}
+50% { transform:  scale(1.2,1.2);}
+40% { transform:  scale(1,1);
+100% { transform: scale(1,1);}
+}
