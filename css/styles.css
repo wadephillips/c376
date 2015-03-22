@@ -55,32 +55,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-.img_wrapper{
-    position: relative;
-    overflow: hidden;
-    height 
-}
-
-.img_wrapper img{
-
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 1;
-  
-    -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    transition: opacity .5s;
-}
-
-.img_wrapper.loaded img{
-    opacity: 1;
-}
-
-.img_wrapper.loaded .css_spinner{
-    display: none;
-}
 
 .center {
 	text-align: center;
@@ -150,6 +124,10 @@ aside {
 	width: 30%;
 	float:right;
 }
+#content a {
+	color: #00FF20;
+}
+
 img#star {
 	position: absolute;
 	top:10px;
@@ -167,7 +145,29 @@ img#star.right {
 	left: 5px;
 }
 
-@media screen and (max-width : 882px) {
+ul li{
+   list-style: none;
+}
+section ul li:before{
+   content: '';
+   display: inline-block;
+   height: 15px;
+   width: 15px;
+   background-image: url('../img/opie_star.png') ;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+thead {
+	background-color: #00FF20;
+	color: #000;
+}
+td {
+	background-color: rgba(0,0,0, .75);
+	color: #00FF20;
+	text-align: center;
+
+@media screen and (max-width:882px) {
 
 	header {
 		position: static;
@@ -193,7 +193,6 @@ img#star.right {
 		margin-right: auto;
 	}
 	nav ul li:hover{
-
 		top:0px;
 	}
 	#content{
@@ -209,34 +208,36 @@ img#star.right {
 		margin-right: auto;
 		float:none;
 	}
+
 }
+
 @-webkit-keyframes scale {
 0% { -webkit-transform: scale(1,1);}
 20% { -webkit-transform:  scale(1.2,1.2);}
-40% { -webkit-transform:  scale(1,1);
+40% { -webkit-transform:  scale(1,1);}
 100% { -webkit-transform:  scale(1,1);}
 }
 @-moz-keyframes scale {
 0% { -moz-transform: scale(1,1);}
 50% { -moz-transform:  scale(1.2,1.2);}
-40% { -moz-transform:  scale(1,1);
+40% { -moz-transform:  scale(1,1);}
 100% { -moz-transform: scale(1,1);}
 }
 @-o-keyframes scale {
 0% { -o-transform: scale(1,1);}
 50% { -o-transform:  scale(1.2,1.2);}
-40% { -o-transform:  scale(1,1);
+40% { -o-transform:  scale(1,1);}
 100% { -o-transform: scale(1,1);}
 }
 @-ms-keyframes scale {
 0% { -ms-transform: scale(1,1);}
 50% { -ms-transform:  scale(1.2,1.2);}
-40% { -ms-transform:  scale(1,1);
+40% { -ms-transform:  scale(1,1);}
 100% { -ms-transform: scale(1,1);}
 }
 @keyframes scale {
 0% { transform: scale(1,1);}
 50% { transform:  scale(1.2,1.2);}
-40% { transform:  scale(1,1);
+40% { transform:  scale(1,1);}
 100% { transform: scale(1,1);}
 }
