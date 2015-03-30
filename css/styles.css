@@ -96,7 +96,7 @@ nav ul li.active, nav ul li:hover {
 }
 nav ul li:hover {
 	position: relative;
-	top: -5px;
+	top: -1px;
 	color:#00FF20;
 }
 nav a:hover, nav ul li:hover a  {
@@ -138,7 +138,7 @@ aside {
 	color: #00FF20;
 }
 
-img#star {
+#content img.star {
 	position: absolute;
 	top:10px;
 	right: 5px;
@@ -150,7 +150,7 @@ img#star {
 	-ms-animation: scale 6s infinite linear;	
 	animation: scale 6s infinite linear;
 }
-img#star.right {
+#content img.star.right {
 	right:0;
 	left: 5px;
 }
@@ -176,7 +176,7 @@ td {
 	background-color: rgba(0,0,0, .75);
 	color: #00FF20;
 	text-align: center;
-
+}
 @media screen and (max-width:882px) {
 
 	header {
@@ -192,7 +192,7 @@ td {
 		margin-right: auto;
 		padding: 0;
 	}
-	nac ul {
+	nav ul {
 		text-align: center;
 	}
 	nav ul li{
@@ -221,7 +221,7 @@ td {
 
 }
 
-@-webkit-keyframes scale {
+/*@-webkit-keyframes scale {
 0% { -webkit-transform: scale(1,1);}
 20% { -webkit-transform:  scale(1.2,1.2);}
 40% { -webkit-transform:  scale(1,1);}
@@ -250,4 +250,4 @@ td {
 50% { transform:  scale(1.2,1.2);}
 40% { transform:  scale(1,1);}
 100% { transform: scale(1,1);}
-}
+}*/
