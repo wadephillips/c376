@@ -72,7 +72,12 @@ nav{
 nav a {
 	text-decoration: none;
 	color:#000;
+	margin: .5em;
 }
+nav li.active a {
+	color:#00FF20;
+}
+
 nav ul {
 	text-align: center;
 	margin: 0;
@@ -89,10 +94,15 @@ nav ul li.active, nav ul li:hover {
 	border: #00FF20 solid 3px;
 	color: #00FF20;
 }
-nav ul li:hover{
+nav ul li:hover {
 	position: relative;
 	top: -5px;
+	color:#00FF20;
 }
+nav a:hover, nav ul li:hover a  {
+	color:#00FF20;
+}
+
 nav ul li.active:hover {
 	position: static;
 }
